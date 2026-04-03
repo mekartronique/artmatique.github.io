@@ -3,149 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ArtMatique | Tech, DIY & Ressources</title>
+<title>ArtMatique | Tech, Tutos & Ressources</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-:root {
-    --bg: #0f172a;
-    --card: #1e293b;
-    --accent: #38bdf8;
-    --accent2: #f472b6;
-    --text: #f1f5f9;
-    --muted: #94a3b8;
+:root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --accent:#38bdf8;
+    --accent2:#f472b6;
+    --text:#f1f5f9;
+    --muted:#94a3b8;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+body{
+    margin:0;
+    font-family:Arial;
+    background:var(--bg);
+    color:var(--text);
 }
 
 /* HEADER */
-header {
-    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+header{
+    padding:70px 20px;
+    text-align:center;
+    background:linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
     url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200');
-    background-size: cover;
-    background-position: center;
-    padding: 90px 20px;
-    text-align: center;
-    border-bottom: 3px solid var(--accent);
+    background-size:cover;
+    background-position:center;
 }
 
-header h1 {
-    font-size: 3.5rem;
-    margin: 0;
-    letter-spacing: 3px;
+header h1{
+    font-size:3rem;
+    margin:0;
 }
 
-header p {
-    color: var(--accent);
-    font-weight: bold;
+header p{
+    color:var(--accent);
+    font-weight:bold;
 }
 
 /* NAV */
-nav {
-    position: sticky;
-    top: 0;
-    background: var(--card);
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    z-index: 100;
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    padding:15px;
+    background:var(--card);
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
-nav a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+nav a{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 12px;
+    border-radius:8px;
+    transition:0.3s;
 }
 
-nav a:hover {
-    color: var(--accent);
+nav a:hover{
+    background:var(--accent);
+    color:black;
+}
+
+/* SEARCH */
+.search-box{
+    text-align:center;
+    margin:20px;
+}
+
+.search-box input{
+    width:60%;
+    max-width:400px;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    outline:none;
 }
 
 /* CONTAINER */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
 }
 
 /* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 /* CARD */
-.card {
-    background: var(--card);
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #334155;
-    transition: 0.3s;
+.card{
+    background:var(--card);
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #334155;
+    transition:0.3s;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    border-color: var(--accent);
+.card:hover{
+    transform:translateY(-5px);
+    border-color:var(--accent);
 }
 
-.badge {
-    background: var(--accent);
-    color: black;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
+.badge{
+    background:var(--accent);
+    color:black;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
 }
 
-/* DOWNLOAD BOX */
-.dl-box {
-    margin-top: 15px;
-    padding: 12px;
-    background: #0b1220;
-    border-left: 4px solid var(--accent2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* BUTTON */
+.btn{
+    background:var(--accent2);
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:10px;
 }
 
-.btn {
-    background: var(--accent2);
-    color: white;
-    padding: 8px 14px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+/* SECTION TITLE */
+h2{
+    border-left:4px solid var(--accent);
+    padding-left:10px;
+    margin-top:50px;
 }
 
-.btn:hover {
-    opacity: 0.8;
+/* LOGIN */
+.login-box{
+    background:var(--card);
+    padding:20px;
+    border-radius:15px;
+    max-width:400px;
+    margin:auto;
 }
 
-/* TITRES SECTION */
-h2 {
-    margin-top: 60px;
-    border-left: 4px solid var(--accent);
-    padding-left: 10px;
+.login-box input{
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border-radius:8px;
+    border:none;
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px;
-    color: var(--muted);
-    border-top: 1px solid #334155;
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--muted);
+    border-top:1px solid #334155;
 }
 </style>
 </head>
@@ -154,77 +172,110 @@ footer {
 
 <header>
     <h1>ARTMATIQUE</h1>
-    <p>Technologie • Informatique • DIY • IA</p>
+    <p>Apprendre la Tech simplement 🚀</p>
 </header>
 
+<!-- NAVIGATION -->
 <nav>
+    <a href="#accueil"><i class="fas fa-home"></i> Accueil</a>
     <a href="#tutos"><i class="fas fa-laptop-code"></i> Tutos</a>
-    <a href="#diy"><i class="fas fa-tools"></i> DIY</a>
-    <a href="#hardware"><i class="fas fa-microchip"></i> Hardware</a>
-    <a href="#files"><i class="fas fa-download"></i> Fichiers</a>
+    <a href="#downloads"><i class="fas fa-download"></i> Téléchargements</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="#login"><i class="fas fa-user"></i> Connexion</a>
 </nav>
+
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" id="search" placeholder="Rechercher un tutoriel...">
+</div>
 
 <div class="container">
 
-<!-- TUTORIELS -->
-<h2 id="tutos">🔥 Tutoriels & Logiciels</h2>
-<div class="grid">
+<!-- ACCUEIL -->
+<section id="accueil">
+    <h2>🏠 Accueil</h2>
+    <p>Bienvenue sur ArtMatique, ton espace pour apprendre Arduino, ESP32, informatique et technologie.</p>
+</section>
+
+<!-- TUTOS -->
+<section id="tutos">
+    <h2>🔥 Tutoriels</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <span class="badge">Arduino</span>
+            <h3>ESP32 WiFi Control</h3>
+            <p>Communication entre deux ESP32 via WiFi.</p>
+            <a class="btn" href="#">Voir le tuto</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">PC</span>
+            <h3>Optimisation Windows</h3>
+            <p>Accélérer ton PC sans logiciel.</p>
+            <a class="btn" href="#">Voir le tuto</a>
+        </div>
+
+        <div class="card">
+            <span class="badge">STM32</span>
+            <h3>Premiers pas STM32</h3>
+            <p>Introduction simple aux microcontrôleurs.</p>
+            <a class="btn" href="#">Voir le tuto</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="downloads">
+    <h2>📥 Téléchargements</h2>
 
     <div class="card">
-        <span class="badge">Windows</span>
-        <h3>Optimisation PC Pro</h3>
-        <p>Améliore la vitesse de ton PC avec mes réglages avancés.</p>
-        <div class="dl-box">
-            <span>script-opti.zip</span>
-            <a href="#" class="btn">Télécharger</a>
-        </div>
+        <p>Retrouve tous les fichiers utilisés dans les tutoriels.</p>
+        <a class="btn" href="#">Accéder aux fichiers</a>
     </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>📩 Contact</h2>
 
     <div class="card">
-        <span class="badge">Arduino</span>
-        <h3>Projet IoT ESP32</h3>
-        <p>Contrôle des LEDs via WiFi entre deux ESP32.</p>
-        <div class="dl-box">
-            <span>esp32_project.zip</span>
-            <a href="#" class="btn">Télécharger</a>
-        </div>
+        <p>Email: contact@artmatique.com</p>
+        <p>YouTube: ArtMatique</p>
     </div>
+</section>
 
-</div>
+<!-- LOGIN -->
+<section id="login">
+    <h2>🔐 Connexion</h2>
 
-<!-- DIY -->
-<h2 id="diy">🛠️ DIY & Projets</h2>
-<div class="grid">
-
-    <div class="card">
-        <span class="badge">3D Print</span>
-        <h3>Boîtier Arduino</h3>
-        <p>Fichiers STL pour imprimer un boîtier propre.</p>
-        <div class="dl-box">
-            <span>case.stl</span>
-            <a href="#" class="btn">Télécharger</a>
-        </div>
+    <div class="login-box">
+        <input type="text" placeholder="Nom d'utilisateur">
+        <input type="password" placeholder="Mot de passe">
+        <a class="btn" href="#">Se connecter</a>
     </div>
-
-</div>
-
-<!-- FILES -->
-<h2 id="files">📂 Ressources</h2>
-
-<div class="card">
-    <p>Tous les fichiers utilisés dans mes vidéos sont ici.</p>
-    <ul>
-        <li>Guide STM32 débutant - <a href="#" style="color:var(--accent)">Lien</a></li>
-        <li>Pack Arduino complet - <a href="#" style="color:var(--accent)">Lien</a></li>
-        <li>Scripts Python IA - <a href="#" style="color:var(--accent)">Lien</a></li>
-    </ul>
-</div>
+</section>
 
 </div>
 
 <footer>
-    © 2026 ArtMatique — L'art de la technologie à votre portée
+    © 2026 ArtMatique — Créé avec passion
 </footer>
+
+<!-- SIMPLE SEARCH SCRIPT -->
+<script>
+document.getElementById("search").addEventListener("input", function(){
+    let value = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(value) ? "block" : "none";
+    });
+});
+</script>
 
 </body>
 </html>
