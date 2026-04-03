@@ -1,162 +1,172 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArtMatique</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Professionnel | Ingénierie & Recherche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-light: #f4f7f6;
+        }
 
-  <style>
-    :root {
-      --bg: #0b1220;
-      --card: #111a2e;
-      --primary: #38bdf8;
-      --text: #e5e7eb;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
 
-    /* HEADER */
-    header {
-      padding: 50px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #0b1220, #111a2e);
-    }
+        nav {
+            background: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-      color: var(--primary);
-    }
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    header p {
-      margin-top: 10px;
-      opacity: 0.8;
-    }
+        nav a:hover {
+            color: var(--accent-color);
+        }
 
-    /* NAV */
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      padding: 15px;
-      background: #0f172a;
-      border-top: 1px solid #1e293b;
-      border-bottom: 1px solid #1e293b;
-    }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
 
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      font-weight: bold;
-    }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
 
-    nav a:hover {
-      color: var(--primary);
-    }
+        h2 {
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            color: var(--primary-color);
+        }
 
-    /* CONTAINER */
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
 
-    .card {
-      background: var(--card);
-      padding: 25px;
-      border-radius: 12px;
-      transition: 0.3s;
-      border: 1px solid #1e293b;
-    }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
 
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: var(--primary);
-    }
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
 
-    .card h2 {
-      color: var(--primary);
-    }
+        .tag {
+            display: inline-block;
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+        }
 
-    /* BUTTON */
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: var(--primary);
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-
-    .btn:hover {
-      background: #0ea5e9;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-      background: #0f172a;
-      border-top: 1px solid #1e293b;
-      font-size: 14px;
-      opacity: 0.8;
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>ArtMatique 🔥</h1>
-  <p>Tutoriels PC • Smartphones • Arduino • ESP32 • STM32</p>
+    <h1>Prénom Nom</h1>
+    <p>Étudiant Ingénieur en Génie Électrique | Spécialiste IA & Énergies</p>
 </header>
 
 <nav>
-  <a href="#">Accueil</a>
-  <a href="#">Tutoriels</a>
-  <a href="#">Téléchargements</a>
-  <a href="#">Contact</a>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#skills">Compétences</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
+    
+    <section id="about">
+        <h2>À propos</h2>
+        <p>
+            Actuellement en 6ème année d'études d'ingénieur, je me passionne pour l'intersection entre le génie électrique et l'intelligence artificielle. Mes travaux portent notamment sur le monitoring intelligent et la prédiction de défauts dans les systèmes énergétiques.
+        </p>
+    </section>
 
-  <div class="card">
-    <h2>🚀 Bienvenue</h2>
-    <p>Apprends la technologie simplement avec des tutoriels pratiques.</p>
-    <a class="btn" href="#">Commencer</a>
-  </div>
+    <section id="projects">
+        <h2>Projets Phares</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Détection de Défauts Photovoltaïques</h3>
+                <p>Développement d'un système basé sur des réseaux de neurones bimodaux pour l'analyse d'images thermiques par drone.</p>
+                <span class="tag">MATLAB</span> <span class="tag">Deep Learning</span> <span class="tag">Solar</span>
+            </div>
+            <div class="project-card">
+                <h3>Application Python / Tkinter</h3>
+                <p>Interface graphique pour la génération de rapports automatiques de maintenance électrique.</p>
+                <span class="tag">Python</span> <span class="tag">Automation</span>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h2>💻 PC & Smartphones</h2>
-    <p>Dépannage, astuces et optimisation système.</p>
-    <a class="btn" href="#">Voir</a>
-  </div>
+    <section id="skills">
+        <h2>Expertise Technique</h2>
+        <ul>
+            <li><strong>Systèmes de puissance :</strong> Transformateurs, Machines électriques, MPPT.</li>
+            <li><strong>Programmation :</strong> Python, MATLAB, VHDL, C++ (Arduino).</li>
+            <li><strong>IA :</strong> CNN, LSTM, MobileNetV2.</li>
+        </ul>
+    </section>
 
-  <div class="card">
-    <h2>⚡ Arduino / ESP32</h2>
-    <p>Projets IoT et programmation embarquée.</p>
-    <a class="btn" href="#">Explorer</a>
-  </div>
-
-  <div class="card">
-    <h2>📥 Téléchargements</h2>
-    <p>Codes sources, fichiers et projets gratuits.</p>
-    <a class="btn" href="#">Accéder</a>
-  </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Intéressé par une collaboration ou un échange technique ?</p>
+        <p>
+            <i class="fas fa-envelope"></i> mon.email@exemple.com<br>
+            <i class="fab fa-linkedin"></i> linkedin.com/in/votreprofil
+        </p>
+    </section>
 
 </div>
 
 <footer>
-  © 2026 ArtMatique - Tous droits réservés
+    &copy; 2026 - Portfolio Professionnel - Généré via GitHub Pages
 </footer>
 
 </body>
