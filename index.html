@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>ArtMatique</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtMatique - Tech & Tutos</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #38bdf8;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #111827;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .btn {
+            background: #38bdf8;
+            padding: 10px 20px;
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Bienvenue sur ArtMatique 🔥</h1>
-    <p>Tutoriels PC, smartphones, Arduino, ESP32, STM32 et programmation.</p>
+
+<header>
+    <h1>🔥 ArtMatique</h1>
+    <p>Tutoriels PC • Smartphones • Arduino • ESP32 • STM32</p>
+</header>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Tutoriels</a>
+    <a href="#">Téléchargements</a>
+    <a href="#">YouTube</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Bienvenue 👋</h2>
+        <p>Bienvenue sur ArtMatique, ton site de tutoriels tech et informatique.</p>
+        <button class="btn">Voir les tutoriels</button>
+    </div>
+
+    <div class="card">
+        <h2>📥 Téléchargements</h2>
+        <p>Retrouve ici tous les fichiers et projets gratuits.</p>
+        <button class="btn">Accéder</button>
+    </div>
+
+    <div class="card">
+        <h2>🎥 Chaîne YouTube</h2>
+        <p>Abonne-toi pour suivre les tutoriels en vidéo.</p>
+        <button class="btn">Voir YouTube</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 ArtMatique - Tous droits réservés
+</footer>
+
 </body>
 </html>
