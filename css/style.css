@@ -252,7 +252,7 @@
     line-height: 1.8;
 }
 
-/* BOUTON YOUTUBE (ALIGNEMENT CORRIGÉ) */
+/* BOUTON YOUTUBE  */
 .grid .btn-action {
     display: inline-flex; /* Utilise flex pour aligner l'icône et le texte */
     align-items: center;  /* Aligne verticalement au centre */
