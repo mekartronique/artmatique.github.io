@@ -184,7 +184,7 @@
         }
 /* Ajout pour le logo dans css/style.css */
 .logo-img {
-    height: 120px; /* Ajuste selon ton logo */
+    height: 120px; 
     vertical-align: middle;
     margin-right: 10px;
 }
