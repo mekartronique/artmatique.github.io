@@ -83,11 +83,6 @@
         .container { padding: 60px 5%; }
         .section-title { margin-bottom: 40px; font-size: 2.2rem; display: flex; align-items: center; gap: 15px; }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-        }
 
         .card {
             background: var(--glass);
