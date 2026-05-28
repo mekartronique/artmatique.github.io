@@ -294,3 +294,40 @@
     .grid .card { padding: 20px; }
     .card-content h3 { font-size: 1.4rem; }
 }
+
+/*bannière */
+.hero {
+        /* Chemin vers votre image (vérifiez qu'il est correct depuis votre fichier CSS) */
+        background-image: url('assets/banierre.jpg');
+        
+        /* Ajustements pour que l'image s'adapte parfaitement */
+        background-size: cover;       /* L'image couvre toute la zone, sans déformation */
+        background-position: center;  /* L'image est centrée */
+        background-repeat: no-repeat; /* L'image ne se répète pas */
+        
+        /* Hauteur et padding pour donner de l'espace (adaptez selon vos besoins) */
+        min-height: 400px; /* Exemple de hauteur fixe */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centre le texte verticalement */
+        align-items: center; /* Centre le texte horizontalement */
+        text-align: center;
+        
+        /* Un fond sombre pour assurer la lisibilité du texte blanc (optionnel mais recommandé) */
+        background-color: #0c111d; 
+    }
+
+    /* 2. Assurez-vous que le texte dans .hero est bien lisible (blanc) */
+    .hero h1 {
+        color: #ffffff;
+        font-size: 2.5rem; /* Augmentez la taille comme dans l'exemple */
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Ajoute une ombre pour plus de contraste */
+    }
+
+    .hero p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.1rem;
+        max-width: 600px; /* Limite la largeur pour une meilleure lecture */
+        text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
