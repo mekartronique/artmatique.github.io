@@ -500,14 +500,3 @@
     background: #219150;
     transform: translateY(-2px);
 }
-
-/* Responsive pour mobile */
-@media (max-width: 600px) {
-    .table-header { display: none; }
-    .table-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        text-align: center;
-    }
-    .table-row .name { justify-content: center; }
-}
